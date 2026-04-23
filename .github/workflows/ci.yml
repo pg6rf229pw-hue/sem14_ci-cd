@@ -27,7 +27,7 @@ jobs:
 
       - name: Docker image құру
         if: success()
-        run: docker build -t student-app .
+        run: docker build -t student-app -f dockf.dockerfile .
 
       - name: Контейнерді іске қосу
         if: success()
